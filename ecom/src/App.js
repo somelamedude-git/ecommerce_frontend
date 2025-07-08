@@ -1,8 +1,10 @@
 import './App.css';
 import Navbar from './components/Navbar';
 
+
 function App() {
   return (
+    <div className='overlay-light'>
     <div className="App">
       <div className='top'>
         <Navbar/>
@@ -30,10 +32,12 @@ function App() {
                 <li className='cat-item-holder'><a className='category-item' href="">Category-1</a></li>
               </ul>
             </div>
+
           </div>
         </div>
       </div>
      </div>
+    </div>
     </div>
   );
 }
