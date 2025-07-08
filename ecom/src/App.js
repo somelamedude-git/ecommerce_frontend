@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='top'>
+        <Navbar/>
+        <div className='overlay-container'>
+          <img src='/vint.png' className='women'/>
+          <div className='overlay'>
+            <div className='content'>WOMEN'S</div>
+          </div>
+      </div>
+        </div>
+       <div className='products'>
+          <div className='browse'>
+           <label>
+            <input placeholder='browse by'/>
+           </label>
+          </div>
+          <div className='cloth-section'>
+            <div className='filter'></div>
+            <div className='clothes'>
+            {/* keep as grids */}
+            </div>
+          </div>
+         </div>
     </div>
   );
 }
