@@ -7,6 +7,8 @@ body{
   height: 100vh;
   width:100vw;
   background: linear-gradient(#010638, #085996);
+  display:flex;
+  flex-direction: row;
 }
 
 .women{
@@ -21,7 +23,8 @@ body{
   position: relative;
   width: 100vw;
   height: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
+
 }
 
 .overlay {
@@ -52,13 +55,16 @@ body{
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* .products {
-  position: relative; 
-  z-index: 2; 
-  background: white; 
-  padding: 0.5rem 1rem;
-  border-radius: 3rem;
-  width: 200px; 
-} */
+.top{
+    
+}
 
+.filter{
+  display:flex;
+  flex-direction: row;
+}
 
+.inside-browse{
+  width:10px;
+  height:10px
+}

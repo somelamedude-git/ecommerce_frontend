@@ -13,19 +13,15 @@ function App() {
           </div>
       </div>
         </div>
-       <div className='products'>
-          <div className='browse'>
-           <label>
-            <input placeholder='browse by'/>
-           </label>
-          </div>
-          <div className='cloth-section'>
-            <div className='filter'></div>
-            <div className='clothes'>
-            {/* keep as grids */}
-            </div>
-          </div>
-         </div>
+     <div className='products'>
+      <div className='filter'>
+        <div className='subtypes'>
+          <label className='browse'>
+            <input placeholder='browse by...' className='inside-browse'/>
+          </label>
+        </div>
+      </div>
+     </div>
     </div>
   );
 }
