@@ -5,9 +5,9 @@ export default function Navbar(){
 
     const [searchValue, setSearchValue] = useState("");
 
-    // useEffect(()=>{
-    //     console.log(searchValue);
-    // }, [searchValue])
+    useEffect(()=>{
+        console.log(searchValue);
+    }, [searchValue])
     return(
         <div className="Navbar">
             <nav>
