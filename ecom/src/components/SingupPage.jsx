@@ -141,7 +141,7 @@ const styles = {
   }
 };
 
-function SignupPage({ onNavigateToLanding, onLogin, onNavigateToLogin }) {
+function SignupPage({ tolanding, onLogin, tologin }) {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -159,30 +159,30 @@ function SignupPage({ onNavigateToLanding, onLogin, onNavigateToLogin }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simple validation
+
     if (formData.password !== formData.confirmPassword) {
       alert('Passwords do not match');
       return;
     }
     if (formData.firstName && formData.lastName && formData.email && formData.password) {
-      onLogin(); // Auto-login after successful signup
+      onLogin();
     } else {
       alert('Please fill in all fields');
     }
   };
 
   const handleGoogleSignup = () => {
-    // Placeholder for Google signup functionality
+
     console.log('Google signup clicked');
-    // You can integrate with Google OAuth here
-    alert('Google signup functionality would be implemented here');
+
+    alert('Google signup daalo idhar');
   };
 
   return (
     <div style={styles.container}>
       <div style={styles.formContainer}>
         <button 
-          onClick={onNavigateToLanding}
+          onClick={tolanding}
           style={styles.backButton}
           onMouseEnter={(e) => {
             e.target.style.background = 'linear-gradient(135deg, hsl(45, 100%, 85%) 0%, hsl(35, 90%, 68%) 100%)';
@@ -358,7 +358,7 @@ function SignupPage({ onNavigateToLanding, onLogin, onNavigateToLogin }) {
         <div style={styles.switchText}>
           Already have an account?{' '}
           <span 
-            onClick={onNavigateToLogin}
+            onClick={tologin}
             style={styles.switchLink}
             onMouseEnter={(e) => e.target.style.opacity = '0.8'}
             onMouseLeave={(e) => e.target.style.opacity = '1'}
