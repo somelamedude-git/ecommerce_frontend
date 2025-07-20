@@ -30,7 +30,7 @@ const Analytics = () => {
 
 
   useEffect(() => {
-    fetch('')//add the route
+    fetch('/analytics/stats')
       .then(res => res.json())
       .then(data => setStats(data))
       .catch(err => console.error('Failed to load stats:', err))
