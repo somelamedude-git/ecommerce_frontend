@@ -12,13 +12,13 @@
 // import FooterSection from '.components/FooterSection';
 // import SignupPage from '.components/SignupPage';
 
-import AddProduct from "./components/addProduct";
-
+// import AddProduct from "./components/addProduct";
+import Analytics from "./components/Analytics";
 
 function App() {
   return (
    <div className='App'>
-    <AddProduct/>
+    <Analytics/>
    </div>
   );
 }
